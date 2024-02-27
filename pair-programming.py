@@ -76,3 +76,35 @@ meters = convert_to_meters(feet, inches)
 # We print out the result in a formatted string
 for i in range(len(feet)):
     print(f"{feet[i]} feet {inches[i]} inches is equal to {meters[i]} meters.")
+
+
+# Code look good. It is well documented and is easily readable. 
+
+'''
+Test Function
+'''
+def test_convert_to_meters():
+    '''
+    This function tests the convert feet to meters function created by Jordan
+    It takes no parameters and will run the function with two test cases
+    It will print a statement about whether the function produced the correct or incorrect answers
+    '''
+    # Test 1 values
+    feet_test_1 = 0.1
+    inches_test_1 = 12.1
+
+    # test 2 values
+    feet_test_2 = 30.6
+    inches_test_2 = 9.1
+
+    # Answer key
+    test_1 = .3378
+    test_2 = 9.558
+
+    if (convert_to_meters(feet_test_1, inches_test_1) == test_1) & (convert_to_meters(feet_test_2, inches_test_2) == test_2):
+        print('Function is correct!')
+
+    else:
+        print('Function is incorrect!')
+
+test_convert_to_meters()
